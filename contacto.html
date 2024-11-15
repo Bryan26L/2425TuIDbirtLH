@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css" />
 </head>
 <body>
 
@@ -25,14 +25,15 @@
     <!-- Sección principal de contenido -->
     <main>
         <h2>Contacto</h2>
-        <p>Si tienes alguna consulta o deseas unirte a la Sociedad Gastronómica, completa el siguiente formulario:</p>
-        <form action="mailto:tuemail@ejemplo.com" method="get">
+        <img src="imagenes/contacto.jpg" alt="Icono de contacto" />
+        <p>Si tienes alguna consulta o deseas saber más sobre la Sociedad Gastronómica, no dudes en ponerte en contacto con nosotros a través de este formulario:</p>
+        <form action="mailto:correo@ejemplo.com" method="post" enctype="text/plain">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <br>
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required>
-            <br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje"></textarea><br><br>
             <input type="submit" value="Enviar">
         </form>
     </main>
@@ -44,4 +45,3 @@
 
 </body>
 </html>
-
